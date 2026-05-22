@@ -268,7 +268,7 @@ function App() {
               <div className="ecosystem-store-row">
                 <div className="ecosystem-store-pill"><Apple size={15} /> iOS</div>
                 <div className="ecosystem-store-pill"><Play size={15} /> Android</div>
-                <span className="ecosystem-year">2025</span>
+                <span className="ecosystem-year">2026</span>
               </div>
             </div>
           </div>
