@@ -4,7 +4,8 @@ import {
   Apple, Play, Shield, Flame, Users, Repeat, Calendar,
   Trophy, Check, Target, Brain, TrendingUp, ChevronDown,
   Star, Zap, Lock, UserCheck, Award, BarChart2, ArrowRight,
-  MessageCircle, Globe, Sparkles
+  MessageCircle, Globe, Sparkles, Laptop, Smartphone,
+  ListTodo, Eye, Minus, Quote
 } from 'lucide-react';
 import '../App.css';
 import translations from '../translations';
@@ -35,19 +36,9 @@ const UnicefLogo = () => (
 function LangToggle({ lang, setLang }) {
   return (
     <div className="lang-toggle">
-      <button
-        className={`lang-btn ${lang === 'en' ? 'active' : ''}`}
-        onClick={() => setLang('en')}
-      >
-        EN
-      </button>
+      <button className={`lang-btn ${lang === 'en' ? 'active' : ''}`} onClick={() => setLang('en')}>EN</button>
       <span className="lang-sep" />
-      <button
-        className={`lang-btn ${lang === 'cs' ? 'active' : ''}`}
-        onClick={() => setLang('cs')}
-      >
-        CZ
-      </button>
+      <button className={`lang-btn ${lang === 'cs' ? 'active' : ''}`} onClick={() => setLang('cs')}>CZ</button>
     </div>
   );
 }
@@ -55,11 +46,11 @@ function LangToggle({ lang, setLang }) {
 /* ─── Phone Carousel ────────────────────────────────────────── */
 
 const SCREEN_SRCS = [
-  '/images/Screenshot_20260320-210642.png',
-  '/images/Screenshot_20260320-210715.png',
-  '/images/Screenshot_20260320-210727.png',
-  '/images/Screenshot_20260320-210538.png',
-  '/images/Screenshot_20260320-210606.png',
+  '/images/Tasks.png',
+  '/images/Habits.png',
+  '/images/Social Hub - board.png',
+  '/images/Goals.png',
+  '/images/Main Dashboard.png',
 ];
 
 function PhoneCarousel({ labels }) {
@@ -86,29 +77,15 @@ function PhoneCarousel({ labels }) {
   return (
     <div className="phone-carousel-wrapper">
       <div className="phone-glow" />
-      <div className="phone-frame">
-        <div className="phone-notch" />
-        <div className="phone-screen">
-          {SCREEN_SRCS.map((src, i) => (
-            <img
-              key={i}
-              src={src}
-              alt={labels[i]}
-              className={`phone-slide ${i === active ? 'active' : ''}`}
-            />
-          ))}
-        </div>
-        <div className="phone-home-bar" />
+      <div className="phone-image-container">
+        {SCREEN_SRCS.map((src, i) => (
+          <img key={i} src={src} alt={labels[i]} className={`phone-slide ${i === active ? 'active' : ''}`} />
+        ))}
       </div>
       <div className="carousel-label">{labels[active]}</div>
       <div className="carousel-dots">
         {SCREEN_SRCS.map((_, i) => (
-          <button
-            key={i}
-            className={`carousel-dot ${i === active ? 'active' : ''}`}
-            onClick={() => goTo(i)}
-            aria-label={`Screen ${i + 1}`}
-          />
+          <button key={i} className={`carousel-dot ${i === active ? 'active' : ''}`} onClick={() => goTo(i)} aria-label={`Screen ${i + 1}`} />
         ))}
       </div>
     </div>
@@ -146,19 +123,21 @@ function App() {
   }, []);
 
   const featureIcons = [
-    { icon: <Brain size={22} />, bg: 'rgba(173,139,115,.15)', color: 'var(--c-primary)', cardClass: '' },
-    { icon: <Repeat size={22} />, bg: 'rgba(163,201,168,.2)', color: '#5fa866', cardClass: 'bento-habits' },
-    { icon: <BarChart2 size={22} />, bg: 'rgba(206,171,147,.2)', color: '#b07d55', cardClass: 'bento-projects' },
-    { icon: <Star size={22} />, bg: 'rgba(212,122,112,.15)', color: '#D47A70', cardClass: '' },
-    { icon: <Calendar size={22} />, bg: 'rgba(66,133,244,.12)', color: '#4285F4', cardClass: 'bento-calendar' },
-    { icon: <Zap size={22} />, bg: 'rgba(245,182,66,.15)', color: '#c89000', cardClass: 'bento-stakes' },
+    { icon: <Brain size={22} />,    bg: 'rgba(173,139,115,.15)', color: 'var(--c-primary)',  cardClass: '' },
+    { icon: <Repeat size={22} />,   bg: 'rgba(163,201,168,.2)',  color: '#5fa866',           cardClass: 'bento-habits' },
+    { icon: <BarChart2 size={22} />,bg: 'rgba(206,171,147,.2)',  color: '#b07d55',           cardClass: 'bento-projects' },
+    { icon: <Star size={22} />,     bg: 'rgba(212,122,112,.15)', color: '#D47A70',           cardClass: '' },
+    { icon: <Calendar size={22} />, bg: 'rgba(66,133,244,.12)',  color: '#4285F4',           cardClass: 'bento-calendar' },
+    { icon: <Zap size={22} />,      bg: 'rgba(245,182,66,.15)',  color: '#c89000',           cardClass: 'bento-stakes' },
+    { icon: <ListTodo size={22} />, bg: 'rgba(163,201,168,.15)', color: '#4a9055',           cardClass: 'bento-tasks' },
+    { icon: <Eye size={22} />,      bg: 'rgba(173,139,115,.1)',  color: 'var(--c-primary)',  cardClass: 'bento-visions' },
   ];
 
   const socialFeatureIcons = [
-    { icon: <Globe size={20} />, bg: 'rgba(173,139,115,.1)', color: 'var(--c-primary)' },
-    { icon: <Trophy size={20} />, bg: 'rgba(245,182,66,.12)', color: '#c89000' },
-    { icon: <Award size={20} />, bg: 'rgba(212,122,112,.1)', color: '#D47A70' },
-    { icon: <MessageCircle size={20} />, bg: 'rgba(163,201,168,.2)', color: '#5fa866' },
+    { icon: <Globe size={20} />,       bg: 'rgba(173,139,115,.1)',  color: 'var(--c-primary)' },
+    { icon: <Trophy size={20} />,      bg: 'rgba(245,182,66,.12)',  color: '#c89000' },
+    { icon: <Award size={20} />,       bg: 'rgba(212,122,112,.1)',  color: '#D47A70' },
+    { icon: <MessageCircle size={20} />,bg: 'rgba(163,201,168,.2)', color: '#5fa866' },
   ];
 
   return (
@@ -169,21 +148,21 @@ function App() {
         <div className="container header-inner">
           <div className="logo">Skinngit<span className="logo-dot" /></div>
           <nav className="nav">
-            <a href="#how" className="nav-link">{t.nav.how}</a>
+            <a href="#how"      className="nav-link">{t.nav.how}</a>
             <a href="#features" className="nav-link">{t.nav.features}</a>
-            <a href="#social" className="nav-link">{t.nav.community}</a>
-            <a href="#pricing" className="nav-link">{t.nav.pricing}</a>
+            <a href="#social"   className="nav-link">{t.nav.community}</a>
+            <a href="#pricing"  className="nav-link">{t.nav.pricing}</a>
           </nav>
           <div className="header-ctas">
             <LangToggle lang={lang} setLang={setLang} />
-            <a href="https://app.skinngit.com" className="btn-store btn-android"><Globe size={16} /> {t.nav.startWeb}</a>
-            <a href="#" className="btn-store btn-ios btn-ios-soon"><Play size={16} /> {t.nav.googlePlaySoon}</a>
-            <a href="#" className="btn-store btn-ios btn-ios-soon"><Apple size={16} /> iOS</a>
+            <a href="https://app.skinngit.com" className="btn-store btn-ios"><Globe size={16} /> {t.nav.startWeb}</a>
+            <a href="#" className="btn-store btn-android btn-ios-soon"><Play size={16} /> {t.nav.googlePlaySoon}</a>
+            <a href="#" className="btn-store btn-android btn-ios-soon"><Apple size={16} /> iOS</a>
           </div>
         </div>
       </header>
 
-      {/* ── HERO ── */}
+      {/* ── HERO (A) ── */}
       <section className="hero">
         <div className="hero-bg-grid" />
         <div className="container hero-inner">
@@ -197,7 +176,10 @@ function App() {
             </h1>
             <p className="hero-sub">{t.hero.sub}</p>
             <div className="hero-btns">
-              <a href="https://app.skinngit.com" className="btn-primary-lg"><Globe size={20} /> {t.hero.btnWeb}</a>
+              <a href="https://app.skinngit.com" className="btn-primary-lg">
+                <Globe size={20} /> {t.hero.btnWeb}
+                <span className="btn-live-dot" />
+              </a>
               <div className="store-btns-group">
                 <a href="#" className="btn-coming-soon"><Play size={20} /> {t.hero.btnAndroidSoon}</a>
                 <a href="#" className="btn-coming-soon"><Apple size={20} /> {t.hero.btnIos}</a>
@@ -236,6 +218,63 @@ function App() {
         </div>
       </div>
 
+      {/* ── ECOSYSTEM (B) ── */}
+      <section className="section ecosystem-section">
+        <div className="container">
+          <div className="section-label"><Globe size={14} /> {t.ecosystem.label}</div>
+          <h2 className="section-h2" style={{ whiteSpace: 'pre-line' }}>{t.ecosystem.h2}</h2>
+          <p className="section-sub">{t.ecosystem.sub}</p>
+
+          <div className="ecosystem-grid">
+            {/* Web App */}
+            <div className="ecosystem-card ecosystem-web">
+              <div className="ecosystem-card-header">
+                <div className="ecosystem-icon-wrap ecosystem-icon-web">
+                  <Laptop size={28} />
+                </div>
+                <div>
+                  <span className="ecosystem-badge ecosystem-badge-live">{t.ecosystem.web.badge}</span>
+                  <h3 className="ecosystem-title">{t.ecosystem.web.title}</h3>
+                </div>
+              </div>
+              <p className="ecosystem-desc">{t.ecosystem.web.desc}</p>
+              <ul className="ecosystem-features">
+                {t.ecosystem.web.features.map((f, i) => (
+                  <li key={i}><Check size={14} /> {f}</li>
+                ))}
+              </ul>
+              <a href="https://app.skinngit.com" className="btn-primary-lg ecosystem-cta">
+                <Globe size={18} /> {t.ecosystem.web.cta}
+              </a>
+            </div>
+
+            {/* Mobile App */}
+            <div className="ecosystem-card ecosystem-mobile">
+              <div className="ecosystem-card-header">
+                <div className="ecosystem-icon-wrap ecosystem-icon-mobile">
+                  <Smartphone size={28} />
+                </div>
+                <div>
+                  <span className="ecosystem-badge ecosystem-badge-soon">{t.ecosystem.mobile.badge}</span>
+                  <h3 className="ecosystem-title">{t.ecosystem.mobile.title}</h3>
+                </div>
+              </div>
+              <p className="ecosystem-desc">{t.ecosystem.mobile.desc}</p>
+              <ul className="ecosystem-features">
+                {t.ecosystem.mobile.features.map((f, i) => (
+                  <li key={i}><Check size={14} /> {f}</li>
+                ))}
+              </ul>
+              <div className="ecosystem-store-row">
+                <div className="ecosystem-store-pill"><Apple size={15} /> iOS</div>
+                <div className="ecosystem-store-pill"><Play size={15} /> Android</div>
+                <span className="ecosystem-year">2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── HOW IT WORKS ── */}
       <section id="how" className="section how-section">
         <div className="container">
@@ -264,6 +303,24 @@ function App() {
         </div>
       </section>
 
+      {/* ── SCIENCE PILLARS (H) ── */}
+      <section className="section science-pillars-section">
+        <div className="container">
+          <div className="section-label"><Brain size={14} /> {t.sciencePillars.label}</div>
+          <h2 className="section-h2" style={{ whiteSpace: 'pre-line' }}>{t.sciencePillars.h2}</h2>
+          <div className="pillars-grid">
+            {t.sciencePillars.pillars.map((p, i) => (
+              <div key={i} className="pillar-card">
+                <div className="pillar-num">0{i + 1}</div>
+                <h3 className="pillar-title">{p.title}</h3>
+                <p className="pillar-desc">{p.desc}</p>
+                <span className="pillar-ref">{p.ref}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── FEATURES ── */}
       <section id="features" className="section features-section">
         <div className="container">
@@ -273,7 +330,7 @@ function App() {
           <div className="bento-grid">
 
             {/* Large card: AI Goals */}
-            <div className={`bento bento-lg bento-goals`}>
+            <div className="bento bento-lg bento-goals">
               <div className="bento-text">
                 <div className="bento-icon-chip" style={{ background: featureIcons[0].bg, color: featureIcons[0].color }}>
                   {featureIcons[0].icon}
@@ -283,7 +340,7 @@ function App() {
                 <div className="bento-outcome"><Check size={14} /> {t.features.cards[0].outcome}</div>
               </div>
               <div className="bento-img-wrap">
-                <img src="/images/Screenshot_20260320-210538.png" alt="AI goal plan" className="bento-phone-img" />
+                <img src="/images/Goals.png" alt="AI goal plan" className="bento-phone-img" />
               </div>
             </div>
 
@@ -307,7 +364,7 @@ function App() {
               <div className="bento-outcome"><Check size={14} /> {t.features.cards[2].outcome}</div>
             </div>
 
-            {/* Large reversed: Skin Score */}
+            {/* Large reversed: Skin Score (D) */}
             <div className="bento bento-lg bento-score bento-reverse">
               <div className="bento-text">
                 <div className="bento-icon-chip" style={{ background: featureIcons[3].bg, color: featureIcons[3].color }}>
@@ -318,8 +375,18 @@ function App() {
                 <div className="bento-outcome"><Check size={14} /> {t.features.cards[3].outcome}</div>
               </div>
               <div className="bento-img-wrap">
-                <img src="/images/Screenshot_20260320-210606.png" alt="Profile and score" className="bento-phone-img" />
+                <img src="/images/Main Dashboard.png" alt="Skin Score and achievements" className="bento-phone-img" />
               </div>
+            </div>
+
+            {/* Small: Standalone Tasks (C) */}
+            <div className={`bento bento-sm bento-tasks`}>
+              <div className="bento-icon-chip" style={{ background: featureIcons[6].bg, color: featureIcons[6].color }}>
+                {featureIcons[6].icon}
+              </div>
+              <h3 className="bento-h3">{t.features.cards[6].title}</h3>
+              <p className="bento-p">{t.features.cards[6].desc}</p>
+              <div className="bento-outcome"><Check size={14} /> {t.features.cards[6].outcome}</div>
             </div>
 
             {/* Small: Calendar */}
@@ -342,6 +409,16 @@ function App() {
               <div className="bento-outcome"><Check size={14} /> {t.features.cards[5].outcome}</div>
             </div>
 
+            {/* Small: Life Visions (G) */}
+            <div className={`bento bento-sm bento-visions`}>
+              <div className="bento-icon-chip" style={{ background: featureIcons[7].bg, color: featureIcons[7].color }}>
+                {featureIcons[7].icon}
+              </div>
+              <h3 className="bento-h3">{t.features.cards[7].title}</h3>
+              <p className="bento-p">{t.features.cards[7].desc}</p>
+              <div className="bento-outcome"><Check size={14} /> {t.features.cards[7].outcome}</div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -356,7 +433,7 @@ function App() {
           <div className="social-grid">
             <div className="social-card">
               <div className="social-screen-wrap">
-                <img src="/images/Screenshot_20260320-210727.png" alt="Social Hub Partners" className="social-phone-img" />
+                <img src="/images/Social Hub - board.png" alt="Social Hub Partners" className="social-phone-img" />
               </div>
               <div className="social-card-body">
                 <div className="social-icon-chip"><UserCheck size={22} /></div>
@@ -387,6 +464,72 @@ function App() {
         </div>
       </section>
 
+      {/* ── TESTIMONIALS (E) ── */}
+      <section className="section testimonials-section">
+        <div className="container">
+          <div className="section-label"><Star size={14} /> {t.testimonials.label}</div>
+          <h2 className="section-h2" style={{ whiteSpace: 'pre-line' }}>{t.testimonials.h2}</h2>
+          <div className="testimonials-grid">
+            {t.testimonials.items.map((item, i) => (
+              <div key={i} className="testimonial-card">
+                <div className="testimonial-quote-mark">"</div>
+                <p className="testimonial-quote">{item.quote}</p>
+                <div className="testimonial-author">
+                  <div className="testimonial-avatar">{item.name[0]}</div>
+                  <div className="testimonial-author-info">
+                    <span className="testimonial-name">{item.name}</span>
+                    <span className="testimonial-role">{item.role}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── COMPARISON (F) ── */}
+      <section className="section comparison-section">
+        <div className="container">
+          <div className="section-label"><BarChart2 size={14} /> {t.comparison.label}</div>
+          <h2 className="section-h2">{t.comparison.h2}</h2>
+          <p className="section-sub">{t.comparison.sub}</p>
+
+          <div className="comparison-table-wrap">
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th className="comp-feature-col"></th>
+                  {t.comparison.apps.map(app => (
+                    <th key={app.name} className={app.highlight ? 'comp-us-col' : 'comp-other-col'}>
+                      {app.highlight
+                        ? <><span className="comp-us-name">{app.name}</span><span className="comp-us-tag">Us</span></>
+                        : app.name
+                      }
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {t.comparison.features.map((feature, fi) => (
+                  <tr key={fi}>
+                    <td className="comp-feature-label">{feature}</td>
+                    {t.comparison.apps.map(app => (
+                      <td key={app.name} className={`comp-cell ${app.highlight ? 'comp-us-col' : ''}`}>
+                        {app.values[fi]
+                          ? <Check size={18} className="comp-check-yes" />
+                          : <Minus size={18} className="comp-check-no" />
+                        }
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="comparison-note">{t.comparison.note}</p>
+          </div>
+        </div>
+      </section>
+
       {/* ── PRICING ── */}
       <section id="pricing" className="section pricing-section">
         <div className="container">
@@ -403,7 +546,7 @@ function App() {
                   <li key={i}><Check size={16} /> {f}</li>
                 ))}
               </ul>
-              <a href="#" className="btn-price-outline">{t.pricing.free.btn}</a>
+              <a href="https://app.skinngit.com" className="btn-price-outline">{t.pricing.free.btn}</a>
             </div>
 
             <div className="price-card price-premium">
@@ -416,14 +559,14 @@ function App() {
                   <li key={i}><Check size={16} /> {i < 5 ? <strong>{f.split(' — ')[0]}</strong> : f}{f.includes(' — ') ? ` — ${f.split(' — ')[1]}` : ''}</li>
                 ))}
               </ul>
-              <a href="#" className="btn-price-primary">{t.pricing.premium.btn} <ArrowRight size={16} /></a>
+              <a href="https://app.skinngit.com" className="btn-price-primary">{t.pricing.premium.btn} <ArrowRight size={16} /></a>
               <p className="price-save">{t.pricing.premium.save}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+      {/* ── FAQ (I) ── */}
       <section className="section faq-section">
         <div className="container">
           <div className="section-label">{t.faq.label}</div>
