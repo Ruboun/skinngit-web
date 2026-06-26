@@ -8,7 +8,7 @@ const enSections = [
   {
     title: '1. Introduction',
     content: [
-      'This Privacy Policy ("Policy") describes how we collect, use, and protect your personal data in connection with your use of the Skinngit mobile application ("App"). Please read it carefully before using the App.',
+      'This Privacy Policy ("Policy") describes how we collect, use, and protect your personal data in connection with your use of the instrait mobile application ("App"). Please read it carefully before using the App.',
       'By using the App, you acknowledge that you have read and understood how your personal data is processed as described in this Policy.',
     ],
   },
@@ -91,14 +91,14 @@ const enSections = [
   {
     title: '10. Age Restriction',
     content: [
-      'The Skinngit App is intended exclusively for individuals aged 16 and over. We do not knowingly collect personal data from children under the age of 16. If we discover that we have inadvertently collected personal data from a child under 16, we will delete it without delay.',
+      'The instrait App is intended exclusively for individuals aged 16 and over. We do not knowingly collect personal data from children under the age of 16. If we discover that we have inadvertently collected personal data from a child under 16, we will delete it without delay.',
       'If you are a parent or legal guardian and believe that your child under 16 has provided us with personal data, please contact us at skinngit@gmail.com.',
     ],
   },
   {
     title: '11. Cookies and Similar Technologies',
     content: [
-      'The Skinngit mobile app does not use web cookies. However, we use similar technologies specific to the mobile environment:',
+      'The instrait mobile app does not use web cookies. However, we use similar technologies specific to the mobile environment:',
       '• Firebase Instance ID: an anonymous device identifier used for delivering push notifications and analytics\n• Device local storage: used to store app settings and session data to provide a better user experience',
       'This data is not used for advertising profiling and is not shared with advertisers.',
     ],
@@ -122,7 +122,7 @@ const enSections = [
     title: '14. Contact',
     content: [
       'If you have any questions, comments, or requests regarding this Policy or the processing of your personal data, please contact us:',
-      'Petr Andrýsek — Skinngit\nEmail: skinngit@gmail.com\nAddress: Grégrova 443/12, 779 00 Olomouc, Czech Republic\nBusiness Registration No. (ICO): 17601037',
+      'Petr Andrýsek — instrait\nEmail: skinngit@gmail.com\nAddress: Grégrova 443/12, 779 00 Olomouc, Czech Republic\nBusiness Registration No. (ICO): 17601037',
       'We aim to respond to all data protection enquiries within 5 business days.',
       'This Privacy Policy is valid and effective as of May 15, 2026.',
     ],
@@ -133,7 +133,7 @@ const czSections = [
   {
     title: '1. Úvod',
     content: [
-      'Tyto Zásady ochrany osobních údajů (dále jen „Zásady“) popisují, jakým způsobem shromažďujeme, používáme a chráníme vaše osobní údaje v souvislosti s používáním mobilní aplikace Skinngit (dále jen „Aplikace“). Před použitím Aplikace si je prosím pečlivě přečtěte.',
+      'Tyto Zásady ochrany osobních údajů (dále jen „Zásady”) popisují, jakým způsobem shromažďujeme, používáme a chráníme vaše osobní údaje v souvislosti s používáním mobilní aplikace instrait (dále jen „Aplikace”). Před použitím Aplikace si je prosím pečlivě přečtěte.',
       'Používáním Aplikace potvrzujete, že jste si tyto Zásady přečetli a že rozumíte způsobu zpracování vašich osobních údajů popsanému v tomto dokumentu.',
     ],
   },
@@ -216,14 +216,14 @@ const czSections = [
   {
     title: '10. Věkové omezení',
     content: [
-      'Aplikace Skinngit je určena výhradně pro osoby starší 16 let. Vědomě neshromažďujeme osobní údaje dětí mladších 16 let. Pokud zjistíme, že jsme neúmyslně shromáždili osobní údaje dítěte mladšího 16 let, tyto údaje neprodleně smažeme.',
+      'Aplikace instrait je určena výhradně pro osoby starší 16 let. Vědomě neshromažďujeme osobní údaje dětí mladších 16 let. Pokud zjistíme, že jsme neúmyslně shromáždili osobní údaje dítěte mladšího 16 let, tyto údaje neprodleně smažeme.',
       'Pokud jste rodičem nebo zákonným zástupcem a domníváte se, že vaše dítě mladší 16 let nám poskytlo osobní údaje, kontaktujte nás prosím na adrese skinngit@gmail.com.',
     ],
   },
   {
     title: '11. Cookies a podobné technologie',
     content: [
-      'Mobilní aplikace Skinngit nepoužívá webové cookies. Používáme však podobné technologie specifické pro mobilní prostředí:',
+      'Mobilní aplikace instrait nepoužívá webové cookies. Používáme však podobné technologie specifické pro mobilní prostředí:',
       '• Firebase Instance ID: anonymní identifikátor zařízení používaný pro doručování push notifikací a analytiku\n• Lokální úložiště zařízení: používáno pro ukládání nastavení aplikace a dat relace za účelem lepšího uživatelského zážitku',
       'Tato data nejsou používána pro reklamní profilování a nejsou sdílena s inzerenty.',
     ],
@@ -247,7 +247,7 @@ const czSections = [
     title: '14. Kontakt',
     content: [
       'Pokud máte jakékoli dotazy, připomínky nebo žádosti týkající se těchto Zásad nebo zpracování vašich osobních údajů, kontaktujte nás prosím:',
-      'Petr Andrýsek — Skinngit\nE-mail: skinngit@gmail.com\nAdresa: Gregrova 443/12, 779 00 Olomouc, Česká republika\nIČ: 17601037',
+      'Petr Andrýsek — instrait\nE-mail: skinngit@gmail.com\nAdresa: Gregrova 443/12, 779 00 Olomouc, Česká republika\nIČ: 17601037',
       'Snažíme se odpovídat na všechny dotazy týkající se ochrany osobních údajů do 5 pracovních dnů.',
       'Tyto Zásady ochrany osobních údajů jsou platné a účinné od 15. května 2026.',
     ],
@@ -319,7 +319,7 @@ export default function PrivacyPolicy() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <Link to="/" className="logo">Skinngit<span className="logo-dot" /></Link>
+          <Link to="/" className="logo">instrait<span className="logo-dot" /></Link>
           <nav className="nav">
             <Link to="/#how" className="nav-link">{t.nav.how}</Link>
             <Link to="/#features" className="nav-link">{t.nav.features}</Link>
@@ -347,7 +347,7 @@ export default function PrivacyPolicy() {
             {lang === 'cs' ? 'Zásady ochrany osobních údajů' : 'Privacy Policy'}
           </h1>
           <p style={{ marginBottom: '32px' }}>
-            {lang === 'cs' ? 'Aplikace Skinngit · Verze 1.1 · Platné od 15. května 2026' : 'Skinngit Application · Version 1.1 · Valid from May 15, 2026'}
+            {lang === 'cs' ? 'Aplikace instrait · Verze 1.1 · Platné od 15. května 2026' : 'instrait Application · Version 1.1 · Valid from May 15, 2026'}
           </p>
 
           {/* Lang Toggle */}
@@ -378,7 +378,7 @@ export default function PrivacyPolicy() {
       {/* ── Footer ── */}
       <footer className="footer">
         <div className="container footer-bottom" style={{ borderTop: 'none', paddingTop: 0 }}>
-          <span>© {new Date().getFullYear()} Skinngit. {t.footer.copy}</span>
+          <span>© {new Date().getFullYear()} instrait. {t.footer.copy}</span>
           <span style={{ opacity: 0.5 }}>{t.footer.madeWith}</span>
         </div>
       </footer>

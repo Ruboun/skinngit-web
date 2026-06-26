@@ -146,7 +146,7 @@ function App() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <div className="logo">Skinngit<span className="logo-dot" /></div>
+          <div className="logo">instrait<span className="logo-dot" /></div>
           <nav className="nav">
             <a href="#how"      className="nav-link">{t.nav.how}</a>
             <a href="#features" className="nav-link">{t.nav.features}</a>
@@ -598,7 +598,7 @@ function App() {
       <footer className="footer">
         <div className="container footer-inner">
           <div className="footer-brand">
-            <div className="logo footer-logo">Skinngit<span className="logo-dot" /></div>
+            <div className="logo footer-logo">instrait<span className="logo-dot" /></div>
             <p className="footer-tagline">{t.footer.tagline}</p>
           </div>
           <div className="footer-links">
@@ -624,7 +624,7 @@ function App() {
           </div>
         </div>
         <div className="container footer-bottom">
-          <span>© {new Date().getFullYear()} Skinngit. {t.footer.copy}</span>
+          <span>© {new Date().getFullYear()} instrait. {t.footer.copy}</span>
           <span style={{ opacity: 0.5 }}>{t.footer.madeWith}</span>
         </div>
       </footer>

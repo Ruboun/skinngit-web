@@ -189,7 +189,7 @@ export default function Docs() {
           <Link to="/" className="docs-back-btn">
             <ArrowLeft size={16} /> {nav.back}
           </Link>
-          <div className="docs-logo">Skinngit<span className="logo-dot" /></div>
+          <div className="docs-logo">instrait<span className="logo-dot" /></div>
           <div className="docs-topbar-lang">
             <button
               className={`lang-btn ${lang === 'en' ? 'active' : ''}`}

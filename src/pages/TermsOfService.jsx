@@ -8,9 +8,9 @@ const enSections = [
   {
     title: '1. Introductory Provisions and Provider',
     content: [
-      'The provider and operator of the Skinngit Application is:\n\nName/Business Name: Petr Andrýsek\nLegal Form: Sole Proprietor / Self-employed (OSVČ)\nID (IČO): 17601037\nRegistered Office: Grégrova 443/12, 779 00 Olomouc, Czech Republic\nContact E-mail: skinngit@gmail.com',
+      'The provider and operator of the instrait Application is:\n\nName/Business Name: Petr Andrýsek\nLegal Form: Sole Proprietor / Self-employed (OSVČ)\nID (IČO): 17601037\nRegistered Office: Grégrova 443/12, 779 00 Olomouc, Czech Republic\nContact E-mail: skinngit@gmail.com',
       'For any questions, requests, or objections regarding these Terms, please contact us at the e-mail address listed above.',
-      'The Skinngit Application is a personal development tool designed for goal setting, habit building, project management, and task tracking, utilizing social elements (accountability partnerships) and motivational financial pledges.',
+      'The instrait Application is a personal development tool designed for goal setting, habit building, project management, and task tracking, utilizing social elements (accountability partnerships) and motivational financial pledges.',
     ],
   },
   {
@@ -90,7 +90,7 @@ const enSections = [
   {
     title: '12. Contact Information',
     content: [
-      'Should you have any questions, complaints, or comments regarding these Terms, you can contact us at:\n\nE-mail: skinngit@gmail.com\nMailing Address: Petr Andrýsek - Skinngit, Grégrova 443/12, 779 00 Olomouc, Czech Republic',
+      'Should you have any questions, complaints, or comments regarding these Terms, you can contact us at:\n\nE-mail: skinngit@gmail.com\nMailing Address: Petr Andrýsek - instrait, Grégrova 443/12, 779 00 Olomouc, Czech Republic',
     ],
   },
 ];
@@ -99,8 +99,8 @@ const czSections = [
   {
     title: '1. Úvodní ustanovení a poskytovatel',
     content: [
-      'Poskytovatelem a provozovatelem Aplikace Skinngit je:\n\nJméno/Firma: Petr Andrýsek\nPrávní forma: Fyzická osoba – podnikatel (OSVČ)\nIČO: 17601037\nSídlo: Grégrova 443/12, 779 00 Olomouc, Česká republika\nKontaktní e-mail: skinngit@gmail.com',
-      'Aplikace Skinngit je nástroj pro osobní rozvoj, dosahování cílů, budování návyků, správu projektů a úkolů, který využívá sociální prvky (accountability partnerství) a motivační finanční sázky.',
+      'Poskytovatelem a provozovatelem Aplikace instrait je:\n\nJméno/Firma: Petr Andrýsek\nPrávní forma: Fyzická osoba – podnikatel (OSVČ)\nIČO: 17601037\nSídlo: Grégrova 443/12, 779 00 Olomouc, Česká republika\nKontaktní e-mail: skinngit@gmail.com',
+      'Aplikace instrait je nástroj pro osobní rozvoj, dosahování cílů, budování návyků, správu projektů a úkolů, který využívá sociální prvky (accountability partnerství) a motivační finanční závazky.',
     ],
   },
   {
@@ -180,7 +180,7 @@ const czSections = [
   {
     title: '12. Kontakt',
     content: [
-      'V případě jakýchkoli dotazů, stížností nebo připomínek k těmto Podmínkám nás můžete kontaktovat na:\n\nE-mail: skinngit@gmail.com\nKorespondenční adresa: Petr Andrýsek - Skinngit, Grégrova 443/12, 779 00 Olomouc, Česká republika.',
+      'V případě jakýchkoli dotazů, stížností nebo připomínek k těmto Podmínkám nás můžete kontaktovat na:\n\nE-mail: skinngit@gmail.com\nKorespondenční adresa: Petr Andrýsek - instrait, Grégrova 443/12, 779 00 Olomouc, Česká republika.',
     ],
   },
 ];
@@ -250,7 +250,7 @@ export default function TermsOfService() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <Link to="/" className="logo">Skinngit<span className="logo-dot" /></Link>
+          <Link to="/" className="logo">instrait<span className="logo-dot" /></Link>
           <nav className="nav">
             <Link to="/#how" className="nav-link">{t.nav.how}</Link>
             <Link to="/#features" className="nav-link">{t.nav.features}</Link>
@@ -279,8 +279,8 @@ export default function TermsOfService() {
           </h1>
           <p style={{ marginBottom: '32px' }}>
             {lang === 'cs'
-              ? 'Aplikace Skinngit · Verze 1.0 · Platné od 18. května 2026'
-              : 'Skinngit Application · Version 1.0 · Valid from May 18, 2026'}
+              ? 'Aplikace instrait · Verze 1.0 · Platné od 18. května 2026'
+              : 'instrait Application · Version 1.0 · Valid from May 18, 2026'}
           </p>
 
           <p style={{ marginBottom: '24px', fontSize: '0.95rem', opacity: 0.8 }}>
@@ -317,7 +317,7 @@ export default function TermsOfService() {
       {/* ── Footer ── */}
       <footer className="footer">
         <div className="container footer-bottom" style={{ borderTop: 'none', paddingTop: 0 }}>
-          <span>© {new Date().getFullYear()} Skinngit. {t.footer.copy}</span>
+          <span>© {new Date().getFullYear()} instrait. {t.footer.copy}</span>
           <span style={{ opacity: 0.5 }}>{t.footer.madeWith}</span>
         </div>
       </footer>

@@ -1,4 +1,4 @@
-// translations.js — EN & CZ content for Skinngit landing page
+// translations.js — EN & CZ content for instrait landing page
 
 const translations = {
   en: {
@@ -18,7 +18,7 @@ const translations = {
       badge: 'Web App live now · Mobile coming soon',
       h1: 'Stop setting goals.',
       h1accent: 'Start keeping them.',
-      sub: 'Skinngit turns your ambitions into unbreakable commitments — backed by real money, an accountability partner, and a community that\'s watching. Available on web today.',
+      sub: 'instrait seals your commitments with no exit route — pledge real capital, set a strict deadline, and execute under the pressure of the strait. Available on web today.',
       btnIos: 'iOS — Coming Soon',
       btnAndroidSoon: 'Google Play — Coming Soon',
       btnWeb: 'Launch Web App',
@@ -28,10 +28,10 @@ const translations = {
       trustForfeits: 'Forfeits to',
       screenLabels: [
         'Your daily command center',
-        'Habits with real stakes',
+        'Habits with real pledges',
         'Social Hub & Buddy finder',
         'AI-generated goal plans',
-        'Skin Score & achievements',
+        'Strait Score & achievements',
       ],
     },
 
@@ -55,7 +55,7 @@ const translations = {
         features: [
           'Complete goal, habit & project management',
           'AI Goal Planner',
-          'Financial stakes via Stripe',
+          'Financial pledges via Stripe',
           'Social Hub & leaderboards',
         ],
       },
@@ -79,16 +79,16 @@ const translations = {
       h2: 'Three steps to a different you.',
       steps: [
         {
-          title: 'Set the goal',
+          title: 'Define the Node',
           body: 'Create a Goal, Habit, Project, or one-off Task. Let the AI break it into milestones and daily steps automatically.',
         },
         {
-          title: 'Put money on the line',
-          body: 'Stake real money. If you miss a deadline, the amount is charged — no excuses, no extensions.',
+          title: 'Lock the Asset',
+          body: 'Pledge real capital. Miss the deadline and it\'s charged — no excuses, no extensions.',
         },
         {
-          title: 'Win or learn to win',
-          body: 'Complete and earn achievements and a rising Skin Score. Fail and your money funds something meaningful.',
+          title: 'Execute the Strait',
+          body: 'Once locked, the exit routes are sealed. Complete and earn a rising Strait Score. Fail and your pledge funds something meaningful.',
         },
       ],
       science: 'Loss aversion — people fight ~2× harder to avoid losing $50 than to gain it. We built the whole app around that fact.',
@@ -97,11 +97,11 @@ const translations = {
     // ── Science Pillars (H) ──
     sciencePillars: {
       label: 'The science',
-      h2: 'Why Skinngit works\nwhen willpower doesn\'t.',
+      h2: 'Why instrait works\nwhen willpower doesn\'t.',
       pillars: [
         {
           title: 'Loss Aversion',
-          desc: 'People fight ~2× harder to avoid losing $50 than to gain it. Every stake you set activates this hardwired circuit.',
+          desc: 'People fight ~2× harder to avoid losing $50 than to gain it. Every pledge you set activates this hardwired circuit.',
           ref: 'Kahneman & Tversky, 1979',
         },
         {
@@ -134,7 +134,7 @@ const translations = {
         },
         {
           title: 'Habit stacks that stick',
-          desc: '"After X, I will Y" — chain habits together. Track streaks, set stakes per missed day.',
+          desc: '"After X, I will Y" — chain habits together. Track streaks, set a pledge per missed day.',
           outcome: 'You build discipline automatically',
         },
         {
@@ -143,7 +143,7 @@ const translations = {
           outcome: 'You ship instead of planning forever',
         },
         {
-          title: 'Skin Score — your accountability rating',
+          title: 'Strait Score — your execution rating',
           desc: 'A single number that tracks your follow-through across every goal, habit, and task. Drop too low and you enter Redemption Mode. Earn achievements as you rebuild.',
           outcome: 'You face your real track record — and change it',
         },
@@ -153,18 +153,18 @@ const translations = {
           outcome: 'Your whole life in one view',
         },
         {
-          title: 'Real money at stake',
+          title: 'Real money pledged',
           desc: 'Set any amount. Miss the deadline and Stripe charges it automatically — to charity, app support, or your partners.',
           outcome: 'You take deadlines seriously',
         },
         {
-          title: 'One-off tasks. Real stakes.',
-          desc: 'No long-term commitment needed. Create a single task, set a deadline, stake money on it — done or charged. "Finish the report by Friday or $20 goes to UNICEF."',
+          title: 'One-off tasks. Real pledges.',
+          desc: 'No long-term commitment needed. Create a single task, set a deadline, pledge money on it — done or charged. "Finish the report by Friday or $20 goes to UNICEF."',
           outcome: 'You stop procrastinating on the things that matter most',
         },
         {
           title: 'Life Visions',
-          desc: 'Start with who you want to become. Define your life vision and let Skinngit reverse-engineer it into today\'s goals and habits.',
+          desc: 'Start with who you want to become. Define your life vision and let instrait reverse-engineer it into today\'s goals and habits.',
           outcome: 'Your daily actions connect to something bigger',
         },
       ],
@@ -181,7 +181,7 @@ const translations = {
         bullets: [
           'Filter by Gym, Running, Study, Cycling & more',
           'Mutual approval — both sides commit',
-          'Partners share in your forfeited stakes',
+          'Partners share in your forfeited pledges',
         ],
       },
       features: [
@@ -191,7 +191,7 @@ const translations = {
         },
         {
           title: 'Leaderboards',
-          desc: 'Compete on streak length, goals completed, and Skin Score. Three boards, updated in real time.',
+          desc: 'Compete on streak length, goals completed, and Strait Score. Three boards, updated in real time.',
         },
         {
           title: 'Partner Rewards',
@@ -215,7 +215,7 @@ const translations = {
           role: 'Beta tester · Prague',
         },
         {
-          quote: 'The Skin Score is brutal in the best way. Watching my number drop after skipping the gym was the push I finally needed.',
+          quote: 'The Strait Score is brutal in the best way. Watching my number drop after skipping the gym was the push I finally needed.',
           name: 'Sarah L.',
           role: 'Beta tester · London',
         },
@@ -231,9 +231,9 @@ const translations = {
     comparison: {
       label: 'How we compare',
       h2: 'Built different.',
-      sub: 'Most apps reward you for trying. Skinngit rewards you for doing.',
+      sub: 'Most apps reward you for trying. instrait rewards you for doing.',
       features: [
-        'Real money stakes',
+        'Real money pledges',
         'Social accountability',
         'AI goal planning',
         'Reputation score',
@@ -241,7 +241,7 @@ const translations = {
         'Web + Mobile',
       ],
       apps: [
-        { name: 'Skinngit', values: [true, true, true, true, true, true], highlight: true },
+        { name: 'instrait', values: [true, true, true, true, true, true], highlight: true },
         { name: 'Beeminder', values: [true, false, false, false, false, true] },
         { name: 'Habitica', values: [false, true, false, false, true, true] },
         { name: 'Streaks', values: [false, false, false, false, false, false] },
@@ -261,10 +261,10 @@ const translations = {
         features: [
           'Up to 2 Goals, 1 Project, 5 Habits',
           'Unlimited standalone tasks',
-          'Financial stakes on all items',
+          'Financial pledges on all items',
           'AI Goal Plan Generator',
           'Full Social Hub access',
-          'Skin Score & achievements',
+          'Strait Score & achievements',
         ],
         btn: 'Start Free',
       },
@@ -294,31 +294,31 @@ const translations = {
       items: [
         {
           q: 'Is my money safe?',
-          a: 'Yes. Payments are processed by Stripe (PCI DSS Level 1). Skinngit stores only a secure token — never your card number.',
+          a: 'Yes. Payments are processed by Stripe (PCI DSS Level 1). instrait stores only a secure token — never your card number.',
         },
         {
-          q: 'What happens if I fail a goal with a stake?',
-          a: 'The staked amount is charged automatically to your card and sent where you chose: a global charity (UNICEF, WHO, Doctors Without Borders) or your accountability partner.',
+          q: 'What happens if I fail a goal with a pledge?',
+          a: 'The pledged amount is charged automatically to your card and sent where you chose: a global charity (UNICEF, WHO, Doctors Without Borders) or your accountability partner.',
         },
         {
-          q: 'Can I stake money on a one-off task, not just goals?',
+          q: 'Can I pledge money on a one-off task, not just goals?',
           a: 'Yes. Standalone Tasks let you put money on any single thing — "Finish the report by Friday or $20 goes to UNICEF." No habit streak or long-term goal plan needed.',
         },
         {
-          q: 'What is the Skin Score?',
-          a: 'Your Skin Score is a reputation number that tracks your follow-through rate across all goals, habits, and tasks. Complete what you commit to and it rises. Miss deadlines and it drops. Fall too low and you enter Redemption Mode — a locked state until you prove yourself again. Completing goals also earns you achievements that are visible on your public profile.',
+          q: 'What is the Strait Score?',
+          a: 'Your Strait Score is a reputation number that tracks your follow-through rate across all goals, habits, and tasks. Complete what you commit to and it rises. Miss deadlines and it drops. Fall too low and you enter Redemption Mode — a locked state until you prove yourself again. Completing goals also earns you achievements that are visible on your public profile.',
         },
         {
           q: 'How do Partner Rewards work?',
-          a: 'Hit consistency milestones — streaks, completed goals, high Skin Score — and unlock real vouchers and discounts from fitness, wellness, and productivity brands. Partner Rewards is a Premium feature.',
+          a: 'Hit consistency milestones — streaks, completed goals, high Strait Score — and unlock real vouchers and discounts from fitness, wellness, and productivity brands. Partner Rewards is a Premium feature.',
         },
         {
           q: 'What is "Locked In" mode for Projects?',
-          a: 'Projects start in brainstorm mode — free-form idea dumping with no consequences. Switch to Locked In when you\'re ready to commit: deadlines activate, stakes apply, and the project appears in your accountability dashboard.',
+          a: 'Projects start in brainstorm mode — free-form idea dumping with no consequences. Switch to Locked In when you\'re ready to commit: deadlines activate, pledges apply, and the project appears in your accountability dashboard.',
         },
         {
-          q: 'Can I remove a stake?',
-          a: 'Stakes are intentionally hard to remove — that friction is the point. The commitment needs to feel real.',
+          q: 'Can I remove a pledge?',
+          a: 'Pledges are intentionally hard to remove — that friction is the point. The commitment needs to feel real.',
         },
         {
           q: 'Are social features mandatory?',
@@ -329,8 +329,8 @@ const translations = {
           a: 'You control visibility for every item: Private (only you), Followers (people you approve), or Partners (mutual accountability pairs). Nothing is public by default.',
         },
         {
-          q: 'Do I need Premium to use stakes?',
-          a: 'No. Financial stakes are included in the free plan. Premium unlocks unlimited items, advanced analytics, habit stacks, and Google Calendar Sync.',
+          q: 'Do I need Premium to use pledges?',
+          a: 'No. Financial pledges are included in the free plan. Premium unlocks unlimited items, advanced analytics, habit stacks, and Google Calendar Sync.',
         },
       ],
     },
@@ -347,7 +347,7 @@ const translations = {
 
     // ── Footer ──
     footer: {
-      tagline: 'Prove it or pay for it.',
+      tagline: 'Execution through constraint.',
       product: 'Product',
       community: 'Community',
       legal: 'Legal',
@@ -362,7 +362,7 @@ const translations = {
         terms: 'Terms of Service',
       },
       copy: 'All rights reserved.',
-      madeWith: 'Made to make you keep your word.',
+      madeWith: 'Built to keep you honest.',
     },
   },
 
@@ -384,7 +384,7 @@ const translations = {
       badge: 'Webová aplikace online · Mobilní brzy',
       h1: 'Přestaň si dávat cíle.',
       h1accent: 'Začni je plnit.',
-      sub: 'Skinngit promění tvé ambice v závazky, které nelze porušit — podpořené skutečnými penězi, partnerem zodpovědnosti a komunitou, která tě sleduje. Dostupné na webu dnes.',
+      sub: 'instrait uzavře tvé závazky bez možnosti úniku — založ finanční závazek, nastav přísný termín a provedení pod tlakem průlivu. Dostupné na webu dnes.',
       btnIos: 'iOS — Brzy k dispozici',
       btnAndroidSoon: 'Google Play — Brzy k dispozici',
       btnWeb: 'Spustit Webovou Aplikaci',
@@ -394,10 +394,10 @@ const translations = {
       trustForfeits: 'Propadá',
       screenLabels: [
         'Tvoje denní základna',
-        'Návyky se skutečnými sázkami',
+        'Návyky se skutečnými závazky',
         'Social Hub & hledání parťáka',
         'AI plán tvých cílů',
-        'Skin Score & achievementy',
+        'Strait Score & achievementy',
       ],
     },
 
@@ -414,12 +414,12 @@ const translations = {
       web: {
         badge: '● Online teď',
         title: 'Webová aplikace',
-        desc: 'Plnohodnotný zážitek v prohlížeči. Nastavuj cíle, sleduj návyky, spravuj projekty a drž peníze v sázce — z jakéhokoliv zařízení s prohlížečem.',
+        desc: 'Plnohodnotný zážitek v prohlížeči. Nastavuj cíle, sleduj návyky, spravuj projekty a drž peníze v závazku — z jakéhokoliv zařízení s prohlížečem.',
         cta: 'Otevřít webovou aplikaci',
         features: [
           'Kompletní správa cílů, návyků a projektů',
           'AI generátor plánů cílů',
-          'Finanční sázky přes Stripe',
+          'Finanční závazky přes Stripe',
           'Social Hub & žebříčky',
         ],
       },
@@ -442,16 +442,16 @@ const translations = {
       h2: 'Tři kroky k lepšímu sobě.',
       steps: [
         {
-          title: 'Nastav cíl',
+          title: 'Definuj cíl',
           body: 'Vytvoř Cíl, Návyk, Projekt nebo jednorázový Úkol. Nech AI rozložit ho na milníky a denní kroky automaticky.',
         },
         {
-          title: 'Vsaď peníze',
-          body: 'Dej do sázky skutečné peníze. Pokud propásneš termín, částka je stržena — bez výmluv, bez prodloužení.',
+          title: 'Založ závazek',
+          body: 'Dej do závazku skutečné peníze. Propásneš-li termín, bude stržena — bez výmluv, bez prodloužení.',
         },
         {
-          title: 'Vyhraj nebo se nauč vyhrávat',
-          body: 'Splň a získej achievementy a rostoucí Skin Score. Selži a tvoje peníze podpoří něco smysluplného.',
+          title: 'Projdi průlivem',
+          body: 'Jakmile jsi zavázán, cesty zpět jsou uzavřeny. Splň a tvůj Strait Score poroste. Selži a tvůj závazek podpoří něco smysluplného.',
         },
       ],
       science: 'Averze ke ztrátě — lidé bojují ~2× silněji, aby nepřišli o 50 $, než aby je získali. Na tom jsme postavili celou aplikaci.',
@@ -459,11 +459,11 @@ const translations = {
 
     sciencePillars: {
       label: 'Věda za aplikací',
-      h2: 'Proč Skinngit funguje,\nkdyž vůle nestačí.',
+      h2: 'Proč instrait funguje,\nkdyž vůle nestačí.',
       pillars: [
         {
           title: 'Averze ke ztrátě',
-          desc: 'Lidé bojují ~2× silněji, aby nepřišli o 50 $, než aby je získali. Každá sázka aktivuje tento pevně zapojený obvod.',
+          desc: 'Lidé bojují ~2× silněji, aby nepřišli o 50 $, než aby je získali. Každý závazek aktivuje tento pevně zapojený obvod.',
           ref: 'Kahneman & Tversky, 1979',
         },
         {
@@ -495,7 +495,7 @@ const translations = {
         },
         {
           title: 'Návykové řetězy, které skutečně fungují',
-          desc: '"Po X udělám Y" — propoj návyky dohromady. Sleduj série, nastav sázku za každý promarněný den.',
+          desc: '"Po X udělám Y" — propoj návyky dohromady. Sleduj série, nastav závazek za každý promarněný den.',
           outcome: 'Disciplínu si vybuduješ automaticky',
         },
         {
@@ -504,7 +504,7 @@ const translations = {
           outcome: 'Spustíš to místo věčného plánování',
         },
         {
-          title: 'Skin Score — tvoje skóre zodpovědnosti',
+          title: 'Strait Score — tvoje skóre plnění',
           desc: 'Jediné číslo, které sleduje plnění přes všechny cíle, návyky a úkoly. Klesneš-li příliš nízko, vstoupíš do Redemption Mode. Plněním cílů sbíráš achievementy.',
           outcome: 'Čelíš skutečnému záznamu — a měníš ho',
         },
@@ -514,18 +514,18 @@ const translations = {
           outcome: 'Celý tvůj život na jednom místě',
         },
         {
-          title: 'Skutečné peníze v sázce',
+          title: 'Skutečné peníze v závazku',
           desc: 'Nastav libovolnou částku. Propásneš termín a Stripe ji automaticky strhne — charitě, podpoře aplikace nebo tvým partnerům.',
           outcome: 'Termíny začneš brát vážně',
         },
         {
-          title: 'Jednorázové úkoly. Skutečné sázky.',
-          desc: 'Žádný dlouhodobý závazek není potřeba. Vytvoř jednorázový úkol, nastav termín, vsaď na něj peníze — splněno nebo strženo. „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF."',
+          title: 'Jednorázové úkoly. Skutečné závazky.',
+          desc: 'Žádný dlouhodobý závazek není potřeba. Vytvoř jednorázový úkol, nastav termín, vlož na něj závazek — splněno nebo strženo. „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF."',
           outcome: 'Přestaneš odkládat věci, na kterých nejvíce záleží',
         },
         {
           title: 'Životní vize',
-          desc: 'Začni tím, kým chceš být. Definuj svoji životní vizi a nech Skinngit pomoci rozložit ji do dnešních cílů a návyků.',
+          desc: 'Začni tím, kým chceš být. Definuj svoji životní vizi a nech instrait pomoci rozložit ji do dnešních cílů a návyků.',
           outcome: 'Tvoje denní akce se propojí s něčím větším',
         },
       ],
@@ -541,7 +541,7 @@ const translations = {
         bullets: [
           'Filtruj podle Posilovny, Běhu, Studia, Cyklistiky a dalšího',
           'Vzájemné schválení — obě strany se zavazují',
-          'Partneři se podílejí na tvých propadlých sázkách',
+          'Partneři se podílejí na tvých propadlých závazcích',
         ],
       },
       features: [
@@ -551,7 +551,7 @@ const translations = {
         },
         {
           title: 'Žebříčky',
-          desc: 'Soutěž v délce série, splněných cílech a Skin Score. Tři žebříčky, aktualizované v reálném čase.',
+          desc: 'Soutěž v délce série, splněných cílech a Strait Score. Tři žebříčky, aktualizované v reálném čase.',
         },
         {
           title: 'Partnerské odměny',
@@ -574,7 +574,7 @@ const translations = {
           role: 'Beta tester · Praha',
         },
         {
-          quote: 'Skin Score je brutální tím nejlepším způsobem. Sledovat, jak mi číslo padá po vynechaném tréninku, byl impulz, který jsem konečně potřeboval.',
+          quote: 'Strait Score je brutální tím nejlepším způsobem. Sledovat, jak mi číslo padá po vynechaném tréninku, byl impulz, který jsem konečně potřeboval.',
           name: 'Sarah L.',
           role: 'Beta tester · Londýn',
         },
@@ -589,9 +589,9 @@ const translations = {
     comparison: {
       label: 'Porovnání',
       h2: 'Jinak stavěno.',
-      sub: 'Většina aplikací tě odměňuje za snahu. Skinngit tě odměňuje za výsledky.',
+      sub: 'Většina aplikací tě odměňuje za snahu. instrait tě odměňuje za výsledky.',
       features: [
-        'Sázky skutečnými penězi',
+        'Závazky skutečnými penězi',
         'Sociální zodpovědnost',
         'AI plánování cílů',
         'Skóre reputace',
@@ -599,7 +599,7 @@ const translations = {
         'Web + Mobilní',
       ],
       apps: [
-        { name: 'Skinngit', values: [true, true, true, true, true, true], highlight: true },
+        { name: 'instrait', values: [true, true, true, true, true, true], highlight: true },
         { name: 'Beeminder', values: [true, false, false, false, false, true] },
         { name: 'Habitica', values: [false, true, false, false, true, true] },
         { name: 'Streaks', values: [false, false, false, false, false, false] },
@@ -618,10 +618,10 @@ const translations = {
         features: [
           'Až 2 Cíle, 1 Projekt, 5 Návyků',
           'Neomezené samostatné úkoly',
-          'Finanční sázky na všechny položky',
+          'Finanční závazky na všechny položky',
           'AI generátor plánů cílů',
           'Plný přístup k Social Hubu',
-          'Skin Score & achievementy',
+          'Strait Score & achievementy',
         ],
         btn: 'Začít zdarma',
       },
@@ -650,31 +650,31 @@ const translations = {
       items: [
         {
           q: 'Jsou moje peníze v bezpečí?',
-          a: 'Ano. Platby zpracovává Stripe (PCI DSS Level 1). Skinngit ukládá pouze bezpečný token — nikdy číslo tvé karty.',
+          a: 'Ano. Platby zpracovává Stripe (PCI DSS Level 1). instrait ukládá pouze bezpečný token — nikdy číslo tvé karty.',
         },
         {
-          q: 'Co se stane, když nesplním cíl se sázkou?',
-          a: 'Vsazená částka je automaticky stržena z tvé karty a odeslána tam, kam sis zvolil: globální charita (UNICEF, WHO, Lékaři bez hranic) nebo tvůj partner zodpovědnosti.',
+          q: 'Co se stane, když nesplním cíl se závazkem?',
+          a: 'Vložená částka závazku je automaticky stržena z tvé karty a odeslána tam, kam sis zvolil: globální charita (UNICEF, WHO, Lékaři bez hranic) nebo tvůj partner zodpovědnosti.',
         },
         {
-          q: 'Mohu vsadit peníze na jednorázový úkol, ne jen na cíle?',
-          a: 'Ano. Samostatné úkoly ti umožňují vsadit peníze na cokoliv — „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF." Nepotřebuješ žádnou sérii návyků ani dlouhodobý plán cílů.',
+          q: 'Mohu vložit závazek na jednorázový úkol, ne jen na cíle?',
+          a: 'Ano. Samostatné úkoly ti umožňují vložit peníze na cokoliv — „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF." Nepotřebuješ žádnou sérii návyků ani dlouhodobý plán cílů.',
         },
         {
-          q: 'Co je Skin Score?',
-          a: 'Skin Score je číslo reputace, které sleduje míru plnění tvých cílů, návyků a úkolů. Plni závazky a roste. Propásni termíny a klesá. Klesneš-li příliš nízko, vstoupíš do Redemption Mode — zamčeného stavu, dokud se neprokážeš. Plněním cílů také získáváš achievementy viditelné na tvém veřejném profilu.',
+          q: 'Co je Strait Score?',
+          a: 'Strait Score je číslo reputace, které sleduje míru plnění tvých cílů, návyků a úkolů. Plni závazky a roste. Propásni termíny a klesá. Klesneš-li příliš nízko, vstoupíš do Redemption Mode — zamčeného stavu, dokud se neprokážeš. Plněním cílů také získáváš achievementy viditelné na tvém veřejném profilu.',
         },
         {
           q: 'Jak fungují Partnerské odměny?',
-          a: 'Dosáhni milníků konzistence — série, splněné cíle, vysoké Skin Score — a odemkni poukazy a slevy od fitness, wellness a produktivitních značek. Partnerské odměny jsou Premium funkce.',
+          a: 'Dosáhni milníků konzistence — série, splněné cíle, vysoké Strait Score — a odemkni poukazy a slevy od fitness, wellness a produktivitních značek. Partnerské odměny jsou Premium funkce.',
         },
         {
           q: 'Co je fáze „Zamčeno" u Projektů?',
-          a: 'Projekty začínají v brainstorming módu — volné vyhazování nápadů bez důsledků. Přepni do „Zamčeno", když jsi připravený se zavázat: aktivují se termíny, sázky platí a projekt se zobrazí v tvém dashboardu zodpovědnosti.',
+          a: 'Projekty začínají v brainstorming módu — volné vyhazování nápadů bez důsledků. Přepni do „Zamčeno", když jsi připravený se zavázat: aktivují se termíny, závazky platí a projekt se zobrazí v tvém dashboardu zodpovědnosti.',
         },
         {
-          q: 'Mohu sázku odstranit?',
-          a: 'Sázky jsou záměrně těžko odstranitelné — tření je smyslem. Závazek musí být skutečný.',
+          q: 'Mohu závazek odstranit?',
+          a: 'Závazky jsou záměrně těžko odstranitelné — tření je smyslem. Závazek musí být skutečný.',
         },
         {
           q: 'Jsou sociální funkce povinné?',
@@ -685,8 +685,8 @@ const translations = {
           a: 'Viditelnost kontroluješ pro každou položku: Soukromé (jen ty), Sledující (lidé, které schválíš), nebo Partneři (vzájemné páry zodpovědnosti). Nic není veřejné ve výchozím nastavení.',
         },
         {
-          q: 'Potřebuji Premium pro sázky?',
-          a: 'Ne. Finanční sázky jsou součástí bezplatného plánu. Premium odemyká neomezené položky, pokročilé analytiky, návykové řetězy a synchronizaci s Google Kalendářem.',
+          q: 'Potřebuji Premium pro závazky?',
+          a: 'Ne. Finanční závazky jsou součástí bezplatného plánu. Premium odemyká neomezené položky, pokročilé analytiky, návykové řetězy a synchronizaci s Google Kalendářem.',
         },
       ],
     },
@@ -701,7 +701,7 @@ const translations = {
     },
 
     footer: {
-      tagline: 'Dokaž to, nebo za to zaplať.',
+      tagline: 'Provedení skrze omezení.',
       product: 'Produkt',
       community: 'Komunita',
       legal: 'Právní',
@@ -716,7 +716,7 @@ const translations = {
         terms: 'Podmínky služby',
       },
       copy: 'Všechna práva vyhrazena.',
-      madeWith: 'Abys dodržoval své slovo.',
+      madeWith: 'Postaveno, aby tě udrželo čestným.',
     },
   },
 };

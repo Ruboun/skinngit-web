@@ -48,7 +48,7 @@ export default function Contact() {
     setErrors({});
     setStatus('sending');
 
-    const subject = encodeURIComponent(`[Skinngit] ${formData.subject}`);
+    const subject = encodeURIComponent(`[instrait] ${formData.subject}`);
     const body = encodeURIComponent(
       `Jméno/Name: ${formData.name}\nE-mail: ${formData.email}\n\nZpráva:\n${formData.message}`
     );
@@ -92,7 +92,7 @@ export default function Contact() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <Link to="/" className="logo">Skinngit<span className="logo-dot" /></Link>
+          <Link to="/" className="logo">instrait<span className="logo-dot" /></Link>
           <div className="header-ctas">
             <Link to="/" style={{display:'flex', alignItems:'center', gap: '6px', color: 'var(--color-text-main)', fontWeight: 600}}>
               <ArrowLeft size={16} /> Back
@@ -220,7 +220,7 @@ export default function Contact() {
       {/* ── Footer ── */}
       <footer className="footer">
         <div className="container footer-bottom" style={{ borderTop: 'none', paddingTop: 0 }}>
-          <span>© {new Date().getFullYear()} Skinngit. {t.footer.copy}</span>
+          <span>© {new Date().getFullYear()} instrait. {t.footer.copy}</span>
           <span style={{ opacity: 0.5 }}>{t.footer.madeWith}</span>
         </div>
       </footer>
