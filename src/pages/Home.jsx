@@ -123,21 +123,21 @@ function App() {
   }, []);
 
   const featureIcons = [
-    { icon: <Brain size={22} />,    bg: 'rgba(173,139,115,.15)', color: 'var(--c-primary)',  cardClass: '' },
-    { icon: <Repeat size={22} />,   bg: 'rgba(163,201,168,.2)',  color: '#5fa866',           cardClass: 'bento-habits' },
-    { icon: <BarChart2 size={22} />,bg: 'rgba(206,171,147,.2)',  color: '#b07d55',           cardClass: 'bento-projects' },
-    { icon: <Star size={22} />,     bg: 'rgba(212,122,112,.15)', color: '#D47A70',           cardClass: '' },
-    { icon: <Calendar size={22} />, bg: 'rgba(66,133,244,.12)',  color: '#4285F4',           cardClass: 'bento-calendar' },
-    { icon: <Zap size={22} />,      bg: 'rgba(245,182,66,.15)',  color: '#c89000',           cardClass: 'bento-stakes' },
-    { icon: <ListTodo size={22} />, bg: 'rgba(163,201,168,.15)', color: '#4a9055',           cardClass: 'bento-tasks' },
-    { icon: <Eye size={22} />,      bg: 'rgba(173,139,115,.1)',  color: 'var(--c-primary)',  cardClass: 'bento-visions' },
+    { icon: <Brain size={22} />,    bg: 'rgba(232,146,10,.15)',  color: 'var(--c-primary)',  cardClass: '' },
+    { icon: <Repeat size={22} />,   bg: 'rgba(74,222,128,.15)',  color: '#4ADE80',           cardClass: 'bento-habits' },
+    { icon: <BarChart2 size={22} />,bg: 'rgba(46,46,60,.5)',     color: 'var(--c-primary)',  cardClass: 'bento-projects' },
+    { icon: <Star size={22} />,     bg: 'rgba(248,113,113,.15)', color: '#F87171',           cardClass: '' },
+    { icon: <Calendar size={22} />, bg: 'rgba(96,165,250,.12)',  color: '#60A5FA',           cardClass: 'bento-calendar' },
+    { icon: <Zap size={22} />,      bg: 'rgba(232,146,10,.15)',  color: '#E8920A',           cardClass: 'bento-stakes' },
+    { icon: <ListTodo size={22} />, bg: 'rgba(74,222,128,.12)',  color: '#4ADE80',           cardClass: 'bento-tasks' },
+    { icon: <Eye size={22} />,      bg: 'rgba(232,146,10,.1)',   color: 'var(--c-primary)',  cardClass: 'bento-visions' },
   ];
 
   const socialFeatureIcons = [
-    { icon: <Globe size={20} />,       bg: 'rgba(173,139,115,.1)',  color: 'var(--c-primary)' },
-    { icon: <Trophy size={20} />,      bg: 'rgba(245,182,66,.12)',  color: '#c89000' },
-    { icon: <Award size={20} />,       bg: 'rgba(212,122,112,.1)',  color: '#D47A70' },
-    { icon: <MessageCircle size={20} />,bg: 'rgba(163,201,168,.2)', color: '#5fa866' },
+    { icon: <Globe size={20} />,        bg: 'rgba(232,146,10,.1)',   color: 'var(--c-primary)' },
+    { icon: <Trophy size={20} />,       bg: 'rgba(232,146,10,.12)',  color: '#E8920A' },
+    { icon: <Award size={20} />,        bg: 'rgba(248,113,113,.1)',  color: '#F87171' },
+    { icon: <MessageCircle size={20} />,bg: 'rgba(74,222,128,.15)',  color: '#4ADE80' },
   ];
 
   return (
@@ -283,9 +283,9 @@ function App() {
 
           <div className="steps-grid">
             {[
-              { color: 'var(--c-primary)', bg: 'rgba(173,139,115,.12)', icon: <Target size={28} /> },
-              { color: '#D47A70', bg: 'rgba(212,122,112,.12)', icon: <Shield size={28} /> },
-              { color: '#F5B642', bg: 'rgba(245,182,66,.12)', icon: <Trophy size={28} /> },
+              { color: 'var(--c-primary)', bg: 'rgba(232,146,10,.12)', icon: <Target size={28} /> },
+              { color: '#F87171', bg: 'rgba(248,113,113,.12)', icon: <Shield size={28} /> },
+              { color: '#F5B84C', bg: 'rgba(232,146,10,.12)', icon: <Trophy size={28} /> },
             ].map((s, i) => (
               <div key={i} className="step-card">
                 <span className="step-num">0{i + 1}</span>

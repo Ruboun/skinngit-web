@@ -1,30 +1,49 @@
 :root {
-  --color-bg: #FFFBE9;
-  --color-surface: #FFFFFF;
-  --color-primary: #AD8B73;
-  --color-primary-hover: #9A7B65;
-  --color-secondary: #CEAB93;
-  --color-tertiary: #E3CAA5;
-  --color-text-main: #2C241F;
-  --color-text-muted: #6B5B53;
-  --color-accent-red: #D47A70; /* pastel version of blood red */
-  --color-accent-green: #A3C9A8;
+  /* Backgrounds */
+  --color-bg: #0D0D12;
+  --color-surface: #13131A;
+  --color-card: #1C1C26;
+  --color-input: #23232F;
 
-  --shadow-sm: 0 4px 12px rgba(173, 139, 115, 0.08);
-  --shadow-md: 0 12px 32px rgba(173, 139, 115, 0.12);
-  --shadow-lg: 0 24px 48px rgba(173, 139, 115, 0.16);
-  --shadow-float: 0 16px 40px rgba(173, 139, 115, 0.2);
-  --shadow-xl: 0 32px 64px rgba(173, 139, 115, 0.18);
+  /* Text */
+  --color-text-main: #EEEEF2;
+  --color-text-muted: #9090A0;
 
-  /* shorthand alias */
-  --c-primary: #AD8B73;
-  
+  /* Amber — Primary Accent */
+  --color-primary: #E8920A;
+  --color-primary-hover: #F5B84C;
+  --color-amber-deep: #180F00;
+  --color-amber-dark: #6B4200;
+  --color-amber-tint: #FDE4A0;
+
+  /* Semantic */
+  --color-accent-green: #4ADE80;
+  --color-accent-red: #F87171;
+  --color-accent-purple: #A78BFA;
+  --color-accent-blue: #60A5FA;
+
+  /* Borders */
+  --color-border: #1C1C24;
+  --color-border-strong: #2E2E3C;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.5);
+  --shadow-float: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 32px 64px rgba(0, 0, 0, 0.5);
+
+  /* Aliases */
+  --color-secondary: #9090A0;
+  --color-tertiary: #46464F;
+  --c-primary: #E8920A;
+
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
   --radius-full: 9999px;
-  
+
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -43,8 +62,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
-  
-  /* clean background — grid only shown in hero via App.css */
 }
 
 h1, h2, h3, h4, h5, h6 {

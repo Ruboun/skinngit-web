@@ -259,7 +259,7 @@ function AccordionItem({ section, index }) {
 
   return (
     <div style={{
-      border: '1px solid rgba(173,139,115,0.2)',
+      border: '1px solid rgba(46,46,60,0.8)',
       borderRadius: 'var(--radius-md)',
       overflow: 'hidden',
       marginBottom: '12px',
@@ -287,7 +287,7 @@ function AccordionItem({ section, index }) {
         </span>
       </button>
       {isOpen && (
-        <div style={{ padding: '0 24px 20px', borderTop: '1px solid rgba(173,139,115,0.1)' }}>
+        <div style={{ padding: '0 24px 20px', borderTop: '1px solid rgba(46,46,60,0.5)' }}>
           {section.content.map((paragraph, i) => (
             <p key={i} style={{ marginTop: '16px', whiteSpace: 'pre-line', fontSize: '0.95rem' }}>
               {paragraph}
@@ -353,7 +353,7 @@ export default function PrivacyPolicy() {
           {/* Lang Toggle */}
           <div style={{ 
             display: 'inline-flex', alignItems: 'center', gap: '8px', 
-            background: 'var(--color-surface)', border: '1px solid rgba(173,139,115,0.2)', 
+            background: 'var(--color-surface)', border: '1px solid rgba(46,46,60,0.8)', 
             padding: '8px 16px', borderRadius: 'var(--radius-full)', boxShadow: 'var(--shadow-sm)'
           }}>
             <Globe size={18} style={{ color: 'var(--c-primary)' }} />

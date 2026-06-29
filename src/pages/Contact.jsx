@@ -78,7 +78,7 @@ export default function Contact() {
     width: '100%',
     padding: '12px 16px 12px 40px',
     borderRadius: '8px',
-    border: `1px solid ${error ? 'var(--color-accent-red)' : 'rgba(173,139,115,0.2)'}`,
+    border: `1px solid ${error ? 'var(--color-accent-red)' : 'rgba(46,46,60,0.8)'}`,
     background: 'var(--color-surface)',
     fontFamily: 'var(--font-body)',
     fontSize: '1rem',
@@ -124,8 +124,8 @@ export default function Contact() {
           
           {/* Contact Info Cards */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(173,139,115,0.15)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-              <div style={{ padding: '12px', background: 'rgba(173,139,115,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
+            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(46,46,60,0.7)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ padding: '12px', background: 'rgba(232,146,10,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
                 <Mail size={24} />
               </div>
               <div>
@@ -134,8 +134,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(173,139,115,0.15)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-              <div style={{ padding: '12px', background: 'rgba(173,139,115,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
+            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(46,46,60,0.7)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ padding: '12px', background: 'rgba(232,146,10,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
                 <MapPin size={24} />
               </div>
               <div>
@@ -144,8 +144,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(173,139,115,0.15)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-              <div style={{ padding: '12px', background: 'rgba(173,139,115,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
+            <div style={{ padding: '24px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(46,46,60,0.7)', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ padding: '12px', background: 'rgba(232,146,10,0.1)', borderRadius: '12px', color: 'var(--color-primary)' }}>
                 <Clock size={24} />
               </div>
               <div>
@@ -156,7 +156,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div style={{ padding: '32px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(173,139,115,0.15)', boxShadow: 'var(--shadow-md)' }}>
+          <div style={{ padding: '32px', background: 'var(--color-surface)', borderRadius: '16px', border: '1px solid rgba(46,46,60,0.7)', boxShadow: 'var(--shadow-md)' }}>
             {status === 'success' ? (
               <div style={{ textAlign: 'center', padding: '40px 0' }}>
                 <CheckCircle size={48} style={{ color: 'var(--color-accent-green)', margin: '0 auto 16px' }} />
