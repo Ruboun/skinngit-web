@@ -155,7 +155,7 @@ function App() {
           </nav>
           <div className="header-ctas">
             <LangToggle lang={lang} setLang={setLang} />
-            <a href="https://app.skinngit.com" className="btn-store btn-ios"><Globe size={16} /> {t.nav.startWeb}</a>
+            <a href="https://app.instrait.com" className="btn-store btn-ios"><Globe size={16} /> {t.nav.startWeb}</a>
             <a href="#" className="btn-store btn-android btn-ios-soon"><Play size={16} /> {t.nav.googlePlaySoon}</a>
             <a href="#" className="btn-store btn-android btn-ios-soon"><Apple size={16} /> iOS</a>
           </div>
@@ -176,7 +176,7 @@ function App() {
             </h1>
             <p className="hero-sub">{t.hero.sub}</p>
             <div className="hero-btns">
-              <a href="https://app.skinngit.com" className="btn-primary-lg">
+              <a href="https://app.instrait.com" className="btn-primary-lg">
                 <Globe size={20} /> {t.hero.btnWeb}
                 <span className="btn-live-dot" />
               </a>
@@ -243,7 +243,7 @@ function App() {
                   <li key={i}><Check size={14} /> {f}</li>
                 ))}
               </ul>
-              <a href="https://app.skinngit.com" className="btn-primary-lg ecosystem-cta">
+              <a href="https://app.instrait.com" className="btn-primary-lg ecosystem-cta">
                 <Globe size={18} /> {t.ecosystem.web.cta}
               </a>
             </div>
@@ -546,7 +546,7 @@ function App() {
                   <li key={i}><Check size={16} /> {f}</li>
                 ))}
               </ul>
-              <a href="https://app.skinngit.com" className="btn-price-outline">{t.pricing.free.btn}</a>
+              <a href="https://app.instrait.com" className="btn-price-outline">{t.pricing.free.btn}</a>
             </div>
 
             <div className="price-card price-premium">
@@ -559,7 +559,7 @@ function App() {
                   <li key={i}><Check size={16} /> {i < 5 ? <strong>{f.split(' — ')[0]}</strong> : f}{f.includes(' — ') ? ` — ${f.split(' — ')[1]}` : ''}</li>
                 ))}
               </ul>
-              <a href="https://app.skinngit.com" className="btn-price-primary">{t.pricing.premium.btn} <ArrowRight size={16} /></a>
+              <a href="https://app.instrait.com" className="btn-price-primary">{t.pricing.premium.btn} <ArrowRight size={16} /></a>
               <p className="price-save">{t.pricing.premium.save}</p>
             </div>
           </div>
@@ -584,7 +584,7 @@ function App() {
           <h2 className="cta-h2">{t.cta.h2}</h2>
           <p className="cta-sub">{t.cta.sub}</p>
           <div className="cta-btns">
-            <a href="https://app.skinngit.com" className="btn-primary-lg"><Globe size={20} /> {t.cta.btnWeb}</a>
+            <a href="https://app.instrait.com" className="btn-primary-lg"><Globe size={20} /> {t.cta.btnWeb}</a>
             <div className="store-btns-group">
               <a href="#" className="btn-coming-soon"><Play size={20} /> {t.cta.btnAndroidSoon}</a>
               <a href="#" className="btn-coming-soon"><Apple size={20} /> {t.cta.btnIos}</a>
