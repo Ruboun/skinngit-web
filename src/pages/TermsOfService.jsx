@@ -250,7 +250,7 @@ export default function TermsOfService() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <Link to="/" className="logo">instrait<span className="logo-dot" /></Link>
+          <Link to="/" className="logo"><img src="/instrait-logo.png" alt="instrait" className="logo-img" /></Link>
           <nav className="nav">
             <Link to="/#how" className="nav-link">{t.nav.how}</Link>
             <Link to="/#features" className="nav-link">{t.nav.features}</Link>

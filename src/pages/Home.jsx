@@ -146,7 +146,7 @@ function App() {
       {/* ── Header ── */}
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-inner">
-          <div className="logo">instrait<span className="logo-dot" /></div>
+          <div className="logo"><img src="/instrait-logo.png" alt="instrait" className="logo-img" /></div>
           <nav className="nav">
             <a href="#how"      className="nav-link">{t.nav.how}</a>
             <a href="#features" className="nav-link">{t.nav.features}</a>
@@ -598,7 +598,7 @@ function App() {
       <footer className="footer">
         <div className="container footer-inner">
           <div className="footer-brand">
-            <div className="logo footer-logo">instrait<span className="logo-dot" /></div>
+            <div className="logo footer-logo"><img src="/instrait-logo.png" alt="instrait" className="logo-img" /></div>
             <p className="footer-tagline">{t.footer.tagline}</p>
           </div>
           <div className="footer-links">

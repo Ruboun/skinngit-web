@@ -61,6 +61,12 @@
   background: var(--color-primary);
   display: inline-block;
 }
+.logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
 
 .nav {
   display: flex;
