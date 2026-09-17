@@ -15,14 +15,14 @@ const translations = {
 
     // ── Hero ──
     hero: {
-      badge: 'Web App live now · Mobile coming soon',
+      badge: 'Web App & Android live now · iOS coming soon',
       h1: 'Stop setting goals.',
       h1accent: 'Start keeping them.',
-      sub: 'instrait seals your commitments with no exit route — pledge real capital, set a strict deadline, and execute under the pressure of the strait. Available on web today.',
+      sub: 'instrait seals your commitments with no exit route — pledge real capital, set a strict deadline, and execute under the pressure of the strait. Available on web and Android today.',
       btnIos: 'iOS — Coming Soon',
-      btnAndroidSoon: 'Google Play — Coming Soon',
+      btnAndroid: 'Get it on Google Play',
       btnWeb: 'Launch Web App',
-      fine: 'Free to start · No credit card required · iOS & Android coming soon',
+      fine: 'Free to start · No credit card required · iOS coming soon',
       trustPayments: 'Payments by',
       trustSyncs: 'Syncs with',
       trustForfeits: 'Forfeits to',
@@ -381,14 +381,14 @@ const translations = {
     },
 
     hero: {
-      badge: 'Webová aplikace online · Mobilní brzy',
+      badge: 'Webová aplikace a Android online · iOS brzy',
       h1: 'Přestaň si dávat cíle.',
       h1accent: 'Začni je plnit.',
-      sub: 'instrait uzavře tvé závazky bez možnosti úniku — založ finanční závazek, nastav přísný termín a provedení pod tlakem průlivu. Dostupné na webu dnes.',
+      sub: 'instrait uzavře tvé závazky bez možnosti úniku — založ finanční závazek, nastav přísný termín a provedení pod tlakem průlivu. Dostupné na webu a Androidu dnes.',
       btnIos: 'iOS — Brzy k dispozici',
-      btnAndroidSoon: 'Google Play — Brzy k dispozici',
+      btnAndroid: 'Stáhnout na Google Play',
       btnWeb: 'Spustit Webovou Aplikaci',
-      fine: 'Zdarma · Bez platební karty · iOS & Android brzy k dispozici',
+      fine: 'Zdarma · Bez platební karty · iOS brzy k dispozici',
       trustPayments: 'Platby přes',
       trustSyncs: 'Synchronizuje s',
       trustForfeits: 'Propadá',

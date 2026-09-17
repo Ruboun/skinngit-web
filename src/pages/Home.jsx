@@ -181,7 +181,7 @@ function App() {
                 <span className="btn-live-dot" />
               </a>
               <div className="store-btns-group">
-                <a href="#" className="btn-coming-soon"><Play size={20} /> {t.hero.btnAndroidSoon}</a>
+                <a href="https://play.google.com/store/apps/details?id=com.selfimp.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="btn-store-live"><Play size={20} /> {t.hero.btnAndroid}</a>
                 <a href="#" className="btn-coming-soon"><Apple size={20} /> {t.hero.btnIos}</a>
               </div>
             </div>
