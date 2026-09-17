@@ -25,7 +25,6 @@ const translations = {
       fine: 'Free to start · No credit card required · iOS coming soon',
       trustPayments: 'Payments by',
       trustSyncs: 'Syncs with',
-      trustForfeits: 'Forfeits to',
       screenLabels: [
         'Your daily command center',
         'Habits with real pledges',
@@ -60,7 +59,7 @@ const translations = {
         ],
       },
       mobile: {
-        badge: 'Coming Soon',
+        badge: 'Android Live · iOS Soon',
         title: 'iOS & Android',
         desc: 'Native mobile experience with push notifications, widgets, and deep OS integration. Everything from the web app, built for your pocket.',
         cta: 'Notify me',
@@ -149,17 +148,17 @@ const translations = {
         },
         {
           title: 'Google Calendar sync',
-          desc: 'Every goal and task deadline appears in your Google Calendar automatically. One less thing to switch between. (Premium)',
+          desc: 'Every goal and task deadline appears in your Google Calendar automatically. One less thing to switch between.',
           outcome: 'Your whole life in one view',
         },
         {
           title: 'Real money pledged',
-          desc: 'Set any amount. Miss the deadline and Stripe charges it automatically — to charity, app support, or your partners.',
+          desc: 'Set any amount. Miss the deadline and Stripe charges it automatically — to app support or your accountability partners.',
           outcome: 'You take deadlines seriously',
         },
         {
           title: 'One-off tasks. Real pledges.',
-          desc: 'No long-term commitment needed. Create a single task, set a deadline, pledge money on it — done or charged. "Finish the report by Friday or $20 goes to UNICEF."',
+          desc: 'No long-term commitment needed. Create a single task, set a deadline, pledge money on it — done or charged. "Finish the report by Friday or $20 is gone."',
           outcome: 'You stop procrastinating on the things that matter most',
         },
         {
@@ -195,7 +194,7 @@ const translations = {
         },
         {
           title: 'Partner Rewards',
-          desc: 'Hit consistency milestones → unlock real vouchers, discounts, and free trials from fitness, wellness, and productivity brands. (Premium)',
+          desc: 'Hit consistency milestones → unlock real vouchers, discounts, and free trials from fitness, wellness, and productivity brands.',
         },
         {
           title: 'Success & Shame Boards',
@@ -220,7 +219,7 @@ const translations = {
           role: 'Beta tester · London',
         },
         {
-          quote: 'Finally an app that doesn\'t let you off the hook. Knowing the money goes to UNICEF if I quit — that changed everything.',
+          quote: 'Finally an app that doesn\'t let you off the hook. Knowing the money is gone for good if I quit — that changed everything.',
           name: 'Tomáš B.',
           role: 'Beta tester · Brno',
         },
@@ -298,11 +297,11 @@ const translations = {
         },
         {
           q: 'What happens if I fail a goal with a pledge?',
-          a: 'The pledged amount is charged automatically to your card and sent where you chose: a global charity (UNICEF, WHO, Doctors Without Borders) or your accountability partner.',
+          a: 'The pledged amount is charged automatically to your card and sent where you chose: app support or your accountability partner.',
         },
         {
           q: 'Can I pledge money on a one-off task, not just goals?',
-          a: 'Yes. Standalone Tasks let you put money on any single thing — "Finish the report by Friday or $20 goes to UNICEF." No habit streak or long-term goal plan needed.',
+          a: 'Yes. Standalone Tasks let you put money on any single thing — "Finish the report by Friday or $20 is charged." No habit streak or long-term goal plan needed.',
         },
         {
           q: 'What is the Strait Score?',
@@ -310,7 +309,7 @@ const translations = {
         },
         {
           q: 'How do Partner Rewards work?',
-          a: 'Hit consistency milestones — streaks, completed goals, high Strait Score — and unlock real vouchers and discounts from fitness, wellness, and productivity brands. Partner Rewards is a Premium feature.',
+          a: 'Hit consistency milestones — streaks, completed goals, high Strait Score — and unlock real vouchers and discounts from fitness, wellness, and productivity brands.',
         },
         {
           q: 'What is "Locked In" mode for Projects?',
@@ -327,10 +326,6 @@ const translations = {
         {
           q: 'Who sees my goals?',
           a: 'You control visibility for every item: Private (only you), Followers (people you approve), or Partners (mutual accountability pairs). Nothing is public by default.',
-        },
-        {
-          q: 'Do I need Premium to use pledges?',
-          a: 'No. Financial pledges are included in the free plan. Premium unlocks unlimited items, advanced analytics, habit stacks, and Google Calendar Sync.',
         },
       ],
     },
@@ -391,7 +386,6 @@ const translations = {
       fine: 'Zdarma · Bez platební karty · iOS brzy k dispozici',
       trustPayments: 'Platby přes',
       trustSyncs: 'Synchronizuje s',
-      trustForfeits: 'Propadá',
       screenLabels: [
         'Tvoje denní základna',
         'Návyky se skutečnými závazky',
@@ -424,7 +418,7 @@ const translations = {
         ],
       },
       mobile: {
-        badge: 'Brzy k dispozici',
+        badge: 'Android živě · iOS brzy',
         title: 'iOS & Android',
         desc: 'Nativní mobilní zážitek s push notifikacemi, widgety a hlubokou integrací do OS. Vše z webové aplikace, připravené pro tvoji kapsu.',
         cta: 'Notifikovat mě',
@@ -510,17 +504,17 @@ const translations = {
         },
         {
           title: 'Synchronizace s Google Kalendářem',
-          desc: 'Každý termín cíle a úkolu se automaticky zobrazí v tvém Google Kalendáři. O jednu věc míň přepínat. (Premium)',
+          desc: 'Každý termín cíle a úkolu se automaticky zobrazí v tvém Google Kalendáři. O jednu věc míň přepínat.',
           outcome: 'Celý tvůj život na jednom místě',
         },
         {
           title: 'Skutečné peníze v závazku',
-          desc: 'Nastav libovolnou částku. Propásneš termín a Stripe ji automaticky strhne — charitě, podpoře aplikace nebo tvým partnerům.',
+          desc: 'Nastav libovolnou částku. Propásneš termín a Stripe ji automaticky strhne — podpoře aplikace nebo tvým partnerům.',
           outcome: 'Termíny začneš brát vážně',
         },
         {
           title: 'Jednorázové úkoly. Skutečné závazky.',
-          desc: 'Žádný dlouhodobý závazek není potřeba. Vytvoř jednorázový úkol, nastav termín, vlož na něj závazek — splněno nebo strženo. „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF."',
+          desc: 'Žádný dlouhodobý závazek není potřeba. Vytvoř jednorázový úkol, nastav termín, vlož na něj závazek — splněno nebo strženo. „Dodám zprávu do pátku, nebo přijdu o 500 Kč."',
           outcome: 'Přestaneš odkládat věci, na kterých nejvíce záleží',
         },
         {
@@ -555,7 +549,7 @@ const translations = {
         },
         {
           title: 'Partnerské odměny',
-          desc: 'Dosáhni milníků konzistence → odemkni poukazy, slevy a bezplatné zkušební verze od fitness, wellness a produktivitních značek. (Premium)',
+          desc: 'Dosáhni milníků konzistence → odemkni poukazy, slevy a bezplatné zkušební verze od fitness, wellness a produktivitních značek.',
         },
         {
           title: 'Nástěnky úspěchu & hanby',
@@ -579,7 +573,7 @@ const translations = {
           role: 'Beta tester · Londýn',
         },
         {
-          quote: 'Konečně aplikace, která tě nenechá uniknout. Vědět, že peníze jdou na UNICEF, pokud přestanu — to změnilo vše.',
+          quote: 'Konečně aplikace, která tě nenechá uniknout. Vědět, že o peníze definitivně přijdu, pokud přestanu — to změnilo vše.',
           name: 'Tomáš B.',
           role: 'Beta tester · Brno',
         },
@@ -654,11 +648,11 @@ const translations = {
         },
         {
           q: 'Co se stane, když nesplním cíl se závazkem?',
-          a: 'Vložená částka závazku je automaticky stržena z tvé karty a odeslána tam, kam sis zvolil: globální charita (UNICEF, WHO, Lékaři bez hranic) nebo tvůj partner zodpovědnosti.',
+          a: 'Vložená částka závazku je automaticky stržena z tvé karty a odeslána tam, kam sis zvolil: podpoře aplikace nebo tvému partnerovi zodpovědnosti.',
         },
         {
           q: 'Mohu vložit závazek na jednorázový úkol, ne jen na cíle?',
-          a: 'Ano. Samostatné úkoly ti umožňují vložit peníze na cokoliv — „Dodám zprávu do pátku, nebo jde 500 Kč UNICEF." Nepotřebuješ žádnou sérii návyků ani dlouhodobý plán cílů.',
+          a: 'Ano. Samostatné úkoly ti umožňují vložit peníze na cokoliv — „Dodám zprávu do pátku, nebo přijdu o 500 Kč." Nepotřebuješ žádnou sérii návyků ani dlouhodobý plán cílů.',
         },
         {
           q: 'Co je Strait Score?',
@@ -666,7 +660,7 @@ const translations = {
         },
         {
           q: 'Jak fungují Partnerské odměny?',
-          a: 'Dosáhni milníků konzistence — série, splněné cíle, vysoké Strait Score — a odemkni poukazy a slevy od fitness, wellness a produktivitních značek. Partnerské odměny jsou Premium funkce.',
+          a: 'Dosáhni milníků konzistence — série, splněné cíle, vysoké Strait Score — a odemkni poukazy a slevy od fitness, wellness a produktivitních značek.',
         },
         {
           q: 'Co je fáze „Zamčeno" u Projektů?',
@@ -683,10 +677,6 @@ const translations = {
         {
           q: 'Kdo vidí moje cíle?',
           a: 'Viditelnost kontroluješ pro každou položku: Soukromé (jen ty), Sledující (lidé, které schválíš), nebo Partneři (vzájemné páry zodpovědnosti). Nic není veřejné ve výchozím nastavení.',
-        },
-        {
-          q: 'Potřebuji Premium pro závazky?',
-          a: 'Ne. Finanční závazky jsou součástí bezplatného plánu. Premium odemyká neomezené položky, pokročilé analytiky, návykové řetězy a synchronizaci s Google Kalendářem.',
         },
       ],
     },

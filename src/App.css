@@ -1425,6 +1425,17 @@
   color: var(--color-text-muted);
   opacity: 0.65;
 }
+.ecosystem-store-pill-live {
+  border: 1.5px solid #4ADE80;
+  color: #4ADE80;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.ecosystem-store-pill-live:hover {
+  background: rgba(74,222,128,0.1);
+  transform: translateY(-1px);
+}
 .ecosystem-year {
   font-size: 0.8rem;
   font-weight: 700;

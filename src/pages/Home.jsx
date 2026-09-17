@@ -25,12 +25,6 @@ const GoogleLogo = () => (
   </svg>
 );
 
-const UnicefLogo = () => (
-  <svg viewBox="0 0 80 24" width="60" height="18" fill="none">
-    <text x="0" y="18" fontFamily="Arial,sans-serif" fontWeight="800" fontSize="16" fill="#00AEEF">UNICEF</text>
-  </svg>
-);
-
 /* ─── Language Toggle ───────────────────────────────────────── */
 
 function LangToggle({ lang, setLang }) {
@@ -151,12 +145,11 @@ function App() {
             <a href="#how"      className="nav-link">{t.nav.how}</a>
             <a href="#features" className="nav-link">{t.nav.features}</a>
             <a href="#social"   className="nav-link">{t.nav.community}</a>
-            <a href="#pricing"  className="nav-link">{t.nav.pricing}</a>
           </nav>
           <div className="header-ctas">
             <LangToggle lang={lang} setLang={setLang} />
             <a href="https://app.instrait.com" className="btn-store btn-ios"><Globe size={16} /> {t.nav.startWeb}</a>
-            <a href="#" className="btn-store btn-android btn-ios-soon"><Play size={16} /> {t.nav.googlePlaySoon}</a>
+            <a href="https://play.google.com/store/apps/details?id=com.selfimp.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="btn-store btn-android"><Play size={16} /> {t.nav.googlePlaySoon}</a>
             <a href="#" className="btn-store btn-android btn-ios-soon"><Apple size={16} /> iOS</a>
           </div>
         </div>
@@ -193,9 +186,6 @@ function App() {
               <span className="trust-label">{t.hero.trustSyncs}</span>
               <GoogleLogo />
               <span className="trust-cal">Calendar</span>
-              <span className="trust-sep" />
-              <span className="trust-label">{t.hero.trustForfeits}</span>
-              <UnicefLogo />
             </div>
           </div>
 
@@ -255,7 +245,7 @@ function App() {
                   <Smartphone size={28} />
                 </div>
                 <div>
-                  <span className="ecosystem-badge ecosystem-badge-soon">{t.ecosystem.mobile.badge}</span>
+                  <span className="ecosystem-badge ecosystem-badge-live">{t.ecosystem.mobile.badge}</span>
                   <h3 className="ecosystem-title">{t.ecosystem.mobile.title}</h3>
                 </div>
               </div>
@@ -266,8 +256,8 @@ function App() {
                 ))}
               </ul>
               <div className="ecosystem-store-row">
+                <a href="https://play.google.com/store/apps/details?id=com.selfimp.app&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" className="ecosystem-store-pill ecosystem-store-pill-live"><Play size={15} /> Android</a>
                 <div className="ecosystem-store-pill"><Apple size={15} /> iOS</div>
-                <div className="ecosystem-store-pill"><Play size={15} /> Android</div>
                 <span className="ecosystem-year">2026</span>
               </div>
             </div>
@@ -530,42 +520,6 @@ function App() {
         </div>
       </section>
 
-      {/* ── PRICING ── */}
-      <section id="pricing" className="section pricing-section">
-        <div className="container">
-          <div className="section-label"><TrendingUp size={14} /> {t.pricing.label}</div>
-          <h2 className="section-h2" style={{ whiteSpace: 'pre-line' }}>{t.pricing.h2}</h2>
-
-          <div className="pricing-grid">
-            <div className="price-card">
-              <div className="price-tier">{t.pricing.free.tier}</div>
-              <div className="price-amount">{t.pricing.free.amount}<span>{t.pricing.free.period}</span></div>
-              <p className="price-desc">{t.pricing.free.desc}</p>
-              <ul className="price-list">
-                {t.pricing.free.features.map((f, i) => (
-                  <li key={i}><Check size={16} /> {f}</li>
-                ))}
-              </ul>
-              <a href="https://app.instrait.com" className="btn-price-outline">{t.pricing.free.btn}</a>
-            </div>
-
-            <div className="price-card price-premium">
-              <div className="price-badge">{t.pricing.premium.badge}</div>
-              <div className="price-tier">{t.pricing.premium.tier}</div>
-              <div className="price-amount">{t.pricing.premium.amount}<span>{t.pricing.premium.period}</span></div>
-              <p className="price-desc">{t.pricing.premium.desc}</p>
-              <ul className="price-list">
-                {t.pricing.premium.features.map((f, i) => (
-                  <li key={i}><Check size={16} /> {i < 5 ? <strong>{f.split(' — ')[0]}</strong> : f}{f.includes(' — ') ? ` — ${f.split(' — ')[1]}` : ''}</li>
-                ))}
-              </ul>
-              <a href="https://app.instrait.com" className="btn-price-primary">{t.pricing.premium.btn} <ArrowRight size={16} /></a>
-              <p className="price-save">{t.pricing.premium.save}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── FAQ (I) ── */}
       <section className="section faq-section">
         <div className="container">
@@ -606,7 +560,6 @@ function App() {
               <span className="footer-col-title">{t.footer.product}</span>
               <a href="#how">{t.footer.links.how}</a>
               <a href="#features">{t.footer.links.features}</a>
-              <a href="#pricing">{t.footer.links.pricing}</a>
             </div>
             <div className="footer-col">
               <span className="footer-col-title">{t.footer.community}</span>
